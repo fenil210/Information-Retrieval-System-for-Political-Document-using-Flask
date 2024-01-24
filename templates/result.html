@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Query Result</h1>
+        <p class="lead">You queried: "{{ query }}"</p>
+        <p class="lead">Result: {{ result }}</p>
+        
+        {% if result %}
+            <p class="lead">Click on a document to view its content:</p>
+            <ul>
+                {% for doc_id in result %}
+                    <li><a href="/document/{{ doc_id }}">Document {{ doc_id }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        
+        <a href="/" class="btn btn-primary">Back to Query</a>
+    </div>
+</body>
+</html>
