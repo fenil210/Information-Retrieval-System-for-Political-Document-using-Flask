@@ -8,7 +8,7 @@ This Flask-based Information Retrieval System allows users to query a collection
 - **Term-Document Matrix:** Utilizes a pre-built term-document matrix to optimize document retrieval.
 
 ## Getting Started
-1. Clone this repository: `git clone [<repo-url>](https://github.com/fenil210/Information-Retrieval-System-for-Political-Document-using-Flask)`
+1. Clone this repository: `git clone [https://github.com/fenil210/Information-Retrieval-System-for-Political-Document-using-Flas]
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the Flask application: `python app.py`
 4. Access the application in your browser: `http://localhost:5000`
